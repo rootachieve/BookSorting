@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.temporarygs.booksorting.viewmodel.SelectSubViewModel" />
+    </data>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.select.SelectSubActivity">
+
+        <HorizontalScrollView
+            android:id="@+id/main_sel_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:orientation="horizontal">
+                    <!-- 000-->
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/home_button_back"
+                        android:text="400\n\n1"
+                        android:onClick="@{()->viewModel.selectClick(400,1)}">
+                    </Button>
+
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/home_button_back"
+                        android:text="400\n\n3"
+                        android:onClick="@{()->viewModel.selectClick(400,3)}">
+                    </Button>
+
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/home_button_back"
+                        android:text="400\n\n5"
+                        android:onClick="@{()->viewModel.selectClick(400,5)}">
+                    </Button>
+
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/home_button_back"
+                        android:text="400\n\n7"
+                        android:onClick="@{()->viewModel.selectClick(400,7)}">
+                    </Button>
+
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/home_button_back"
+                        android:text="400\n\n9"
+                        android:onClick="@{()->viewModel.selectClick(400,9)}">
+                    </Button>
+
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/home_button_back"
+                        android:text="400\n\n11"
+                        android:onClick="@{()->viewModel.selectClick(400,11)}">
+                    </Button>
+
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/home_button_back"
+                        android:text="400\n\n13"
+                        android:onClick="@{()->viewModel.selectClick(400,13)}">
+                    </Button>
+
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/home_button_back"
+                        android:text="400\n\n15"
+                        android:onClick="@{()->viewModel.selectClick(400,15)}">
+                    </Button>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:orientation="horizontal">
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/home_button_back"
+                        android:text="400\n\n2"
+                        android:onClick="@{()->viewModel.selectClick(400,2)}">
+                    </Button>
+
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/home_button_back"
+                        android:text="400\n\n4"
+                        android:onClick="@{()->viewModel.selectClick(400,4)}">
+                    </Button>
+
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/home_button_back"
+                        android:text="400\n\n6"
+                        android:onClick="@{()->viewModel.selectClick(400,6)}">
+                    </Button>
+
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/home_button_back"
+                        android:text="400\n\n8"
+                        android:onClick="@{()->viewModel.selectClick(400,8)}">
+                    </Button>
+
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/home_button_back"
+                        android:text="400\n\n10"
+                        android:onClick="@{()->viewModel.selectClick(400,10)}">
+                    </Button>
+
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/home_button_back"
+                        android:text="400\n\n12"
+                        android:onClick="@{()->viewModel.selectClick(400,12)}">
+                    </Button>
+
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/home_button_back"
+                        android:text="400\n\n14"
+                        android:onClick="@{()->viewModel.selectClick(400,14)}">
+                    </Button>
+
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/home_button_back"
+                        android:text="400\n\n16"
+                        android:onClick="@{()->viewModel.selectClick(400,16)}">
+                    </Button>
+
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="409dp"
+            android:layout_height="229dp"
+            android:layout_marginTop="1dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_sel_scroll">
+
+            <TextView
+                android:id="@+id/select_info_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/select_submit_button"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="@string/select_save"
+                android:textSize="20dp"
+                android:onClick="@{()->viewModel.buttonClick()}"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

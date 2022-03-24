@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name= "type">
+        <item>가 일치</item>
+        <item>로 시작</item>
+        <item>로 끝</item>
+        <item>가 중간</item>
+    </string-array>
+</resources>

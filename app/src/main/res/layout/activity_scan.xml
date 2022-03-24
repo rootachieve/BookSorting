@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout   xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <!-- 버튼리스너를 위한 변수-->
+        <variable
+            name="viewModel"
+            type="com.temporarygs.booksorting.viewmodel.ScanViewModel" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.ScanActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include
+                layout="@layout/toolbar"
+                android:id="@+id/toolbar">
+            </include>
+            <com.journeyapps.barcodescanner.DecoratedBarcodeView
+                android:id="@+id/qr"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/scan_LL"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="1dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/qr"
+                tools:layout_editor_absoluteX="1dp">
+
+                <TextView
+                    android:id="@+id/Scan_textView1"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/Scan_textView2"
+                    android:textSize="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/scan_LL"
+                tools:layout_editor_absoluteX="1dp">
+
+                <Button
+                    android:id="@+id/scan_LeftBtn"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="20dp"
+                    android:text="←"
+                    android:textSize="30dp"
+                    android:layout_marginRight="40dp"
+                    android:onClick="@{()->viewModel.decrease()}"></Button>
+
+                <Button
+                    android:id="@+id/scan_RightBtn"
+                    android:layout_weight="1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="40dp"
+                    android:text="→"
+                    android:textSize="30dp"
+                    android:layout_marginLeft="40dp"
+                    android:onClick="@{()->viewModel.increase()}"></Button>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
